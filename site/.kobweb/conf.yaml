@@ -1,0 +1,14 @@
+site:
+  title: "Battle Report"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/iglaz.js"
+      api: "build/libs/iglaz.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/iglaz.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
